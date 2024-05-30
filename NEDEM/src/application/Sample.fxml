@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="437.0" prefWidth="725.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <ListView fx:id="ListV" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="168.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="TextOdrerNum" layoutX="3.0" layoutY="25.0" />
+            <TextField fx:id="TextDate" layoutX="3.0" layoutY="71.0" />
+            <TextField fx:id="TextEquipment" layoutX="3.0" layoutY="116.0" />
+            <TextField fx:id="TextType" layoutX="3.0" layoutY="162.0" />
+            <TextField fx:id="TextDescription" layoutX="3.0" layoutY="207.0" />
+            <TextField fx:id="TextClient" layoutX="3.0" layoutY="252.0" />
+            <TextField fx:id="TextStatys" layoutX="3.0" layoutY="301.0" />
+            <Label layoutX="1.0" layoutY="5.0" text="Order Number" textFill="WHITE" />
+            <Label layoutX="3.0" layoutY="51.0" text="Date add" textFill="WHITE" />
+            <Label layoutX="3.0" layoutY="97.0" text="Equipment needs fix" textFill="WHITE" />
+            <Label layoutX="3.0" layoutY="142.0" text="Type of fault" textFill="WHITE" />
+            <Label layoutX="2.0" layoutY="188.0" text="Descriptoin of the problem" textFill="WHITE" />
+            <Label layoutX="3.0" layoutY="233.0" text="Client" textFill="WHITE" />
+            <Label layoutX="4.0" layoutY="283.0" text="Status" textFill="WHITE" />
+            <Button fx:id="TextAdd" layoutX="6.0" layoutY="336.0" mnemonicParsing="false" onAction="#TextAdd_click" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: #111;" text="Add" textFill="WHITE" />
+            <Button fx:id="TextDelete" layoutX="6.0" layoutY="368.0" mnemonicParsing="false" onAction="#TextDelete_click" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: #111;" text="Delete" textFill="WHITE" />
+            <Button fx:id="TextRefresh" layoutX="6.0" layoutY="401.0" mnemonicParsing="false" onAction="#TextRefresh_click" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: #111;" text="Refresh" textFill="WHITE" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>
